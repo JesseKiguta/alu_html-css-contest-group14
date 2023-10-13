@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Alumni Events Hub</title>
+    <link href='images/icon.png' rel='icon'>
+</head>
+<body>
+    <header>
+        <i class='bx bxs-graduation'></i>
+        <a href="base.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contacts.html">Contact us</a>
+    </header>
+    <main>
+        <form>
+            <div>
+                <h2>Fill in your details below to not miss out on ANY current and future events!</h2>
+                <div class="username">
+                    <i class='bx bx-user'></i>
+                    <label for="username">Your Name</label>
+                    <input class="input-name" type="text" name="username" placeholder="Name">
+                </div>
+
+                <div class="email">
+                    <i class='bx bx-envelope'></i>
+                    <label for="email">Your Email</label>
+                    <input class="input-email" type="text" name="email" placeholder="Email address">
+                </div>
+
+                <div class="event">
+                    <i class='bx bx-calendar-event'></i>
+                    <label for="events">Your Desired Event</label>
+                    <select id="events" name="events">
+                        <option value="null">Choose an event</option>
+                        <option value="prodev1">Mentorship Programs</option>
+                        <option value="prodev2">Team Building Retreats</option>
+                        <option value="prodev3">Leadership Development Programs</option>
+                        <option value="campevents1">Career Expos / Job Fairs</option>
+                        <option value="campevents2">Conferences</option>
+                        <option value="campevents3">Industry Mixers</option>
+                        <option value="campevents4">Lunch-and-Learn Sessions</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="reserve">Reserve my spot</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023, Alumni Events Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
