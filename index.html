@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Alumni Event Hub</title>
-    <link href='images/icon.png' rel='icon'>
 </head>
 <body>
-    <!---hero sectio--->
+
+    <!--Navbar-->
+
     <header>
         <h1>Alumni Events Hub
             <i class='bx bxs-graduation'></i>
         </h1>
-      <div>
-        <nav>
-          <ul> 
-        <li><a href="base.html">Home</a></li>
-         <li><a href="about.html">About</a></li>
-         <li><a href="events.html">Events</a></li>
-         <li><a href="contacts.html">Contact us</a></li>
-        </ul> 
-    </nav>
-    </div>
+        <div>
+            <nav>
+                <ul> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contacts">Contact us</a></li>
+                </ul> 
+            </nav>
+        </div>
     </header>
+
     <main>
         <section>
             <div>
-            <h2>For events and SO much MORE!</h2>
-            <p>Stay connected with your alma mater and fellow graduates through our alumni portal. Explore a vibrant community where you can reminisce, network, and keep up to date with upcoming events. Discover opportunities to attend reunions, workshops, and engaging talks. Join us in celebrating your university journey, relive those memorable moments, and forge new connections. Be part of our dynamic alumni family and never miss a chance to come together.</p>
+                <h2>For events and SO much MORE!</h2>
+                <p>Stay connected with your alma mater and fellow graduates through our alumni portal. Explore a vibrant community where you can reminisce, network, and keep up to date with upcoming events. Discover opportunities to attend reunions, workshops, and engaging talks. Join us in celebrating your university journey, relive those memorable moments, and forge new connections. Be part of our dynamic alumni family and never miss a chance to come together.</p>
             </div>
         </section>
 
-        <!----about-->
+        <!--About-->
 
         <section>
-            <h1>About Us</h1>
+            <h1 id="about">About Us</h1>
             <div class="all-members">
                 <h1>Our members:</h1>
 
@@ -65,10 +67,10 @@
             </div>
         </section>
 
-        <!--events-->
+        <!--Events-->
 
         <section class="prodev">
-            <h1><i class='bx bx-trending-up'></i> Our available Professional Development programs</h1>
+            <h1 id="events"><i class='bx bx-trending-up'></i> Our available Professional Development programs</h1>
             <div>
                 <h2>Mentorship Programs</h2>
                 <p>These programs offer both amateurs and professionals ongoing guidance and development by connecting you with experienced mentors in your field.</p>
@@ -109,11 +111,13 @@
                 <p>Sign up <a href="contacts.html">here</a>!</p>
             </div>
         </section>
-        <!--contacts-->
+
+        <!--Contacts-->
+
         <section>
             <form>
                 <div>
-                    <h2>Fill in your details below to not miss out on ANY current and future events!</h2>
+                    <h2 id="contacts">Fill in your details below to not miss out on ANY current and future events!</h2>
                     <div class="username">
                         <i class='bx bx-user'></i>
                         <label for="username">Your Name</label>
@@ -145,6 +149,7 @@
             </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2023, Alumni Events Hub. All rights reserved.</p>
     </footer>
