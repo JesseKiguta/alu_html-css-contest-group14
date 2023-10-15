@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+} 
+.background{
+    background-image:url(https://images.unsplash.com/photo-1573165067541-4cd6d9837902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.div-h{
+    display: flex;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.div-h1{
+  font-size: 30px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 10px;
+  color: rgb(4, 5, 5);
+  text-transform: capitalize;
+}
+.event-img{
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+    justify-content: space-between;
+    margin-top:10px ;
+}
+.div-nav{
+    list-style: none;
+    border: none;
+    display: inline-block;
+}
+.nav-ul{
+    display: inline-block;
+}
+.nav-ul li{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left:0px 5px ;
+    margin-top: 15px;
+}
+.nav-ul li a{
+    text-decoration: none;
+    color: rgb(10, 11, 11);
+}
+.nav-ul li a:hover{
+    color: rgb(26, 48, 213);
+    text-decoration: underline;
+    transition: 1s;
+}
+.btn1{
+    border-radius:30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding-right:30px;
+    background-color: rgb(5, 160, 160);
+    text-align: center;
+    margin-left: 200px;
+    margin-bottom:5px;
+    cursor: pointer;
+}
+.btn2{
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;    
+    color: #fff;
+    padding-right: 30px;
+    background-color: rgb(67, 150, 219);
+    align-items: left;
+    margin-left: 30px;
+    margin-bottom:5px;
+    text-align: center;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-h2h{
+    font-size: 50px;
+    font-weight: 600;
+    color:rgb(46, 113, 237);
+    margin-top:150px;
+    text-transform:uppercase;
+    text-align: center;
+    justify-content: center;
+}
+.main-ph{
+    font-size: 20px;
+    font-weight: 600;
+    color:#e51212;
+    margin-top:30px;
+    text-transform:uppercase;
+    text-align: center;
+    justify-content: space-between;
+    word-spacing: 57px;
+
+}
+
