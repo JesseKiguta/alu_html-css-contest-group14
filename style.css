@@ -152,6 +152,66 @@ nav a:hover {
     color: rgba(7, 22, 41, 0.501584);
   }
   
+  .secondary_colour {
+    color: #c271ff;
+  }
+  
+
+  .About{
+    background-color: rgb(37, 105, 199);
+    color: white;
+}
+
+.About h2{
+   text-align: center;
+   font-size: 25px;
+   margin: 8px;
+   padding: 8px;
+   margin-left: -100px;
+   color: white;
+   
+}
+
+.team-container{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+
+.Member {
+padding: 50px;
+flex-direction: column;
+/* background-color: red; */
+flex: wrap;
+justify-content: space-between;
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+
+    
+}
+
+.Member p {
+    /* background-color: red; */
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.Member #sub-image {
+    margin-left: 50px ;
+}
+
+
+
+
 main {
     padding: 20px;
     background-color: #f9f9f9;
