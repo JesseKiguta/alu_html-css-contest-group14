@@ -98,7 +98,12 @@ nav a:hover {
   .overlayText > h2 {
     margin-bottom: 40px;
     min-height: 14px;
-    color: chocolate;
+    color: rgb(210, 90, 30);
+}
+
+.overlayText > p {
+    padding: 14px;
+    color: antiquewhite;
 }
 
 main {
