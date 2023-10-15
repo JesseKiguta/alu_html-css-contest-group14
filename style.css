@@ -1,110 +1,170 @@
-*{
+body,
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     padding: 0;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif !important;
-} 
-.background{
-    background-image:url(https://images.unsplash.com/photo-1573165067541-4cd6d9837902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80) ;
+}
+
+header.background {
+    background-image: url('https://images.unsplash.com/photo-1573165067541-4cd6d9837902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    height: 60vh;
 }
-.div-h{
-    display: flex;
-    border-bottom: black solid 2px;
-    padding-top: 10px;
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-.div-h1{
-  font-size: 30px;
-  font-weight: 800;
-  text-align: left;
-  margin-bottom: 10px;
-  color: rgb(4, 5, 5);
-  text-transform: capitalize;
+
+nav li {
+    display: inline;
+    margin-right: 20px;
 }
-.event-img{
-    width: 70px;
-    height: 30px;
-    margin-right: 10px;
-    justify-content: space-between;
-    margin-top:10px ;
-}
-.div-nav{
-    list-style: none;
-    border: none;
-    display: inline-block;
-}
-.nav-ul{
-    display: inline-block;
-}
-.nav-ul li{
-    display: inline-block;
-    margin-right: 40px;
-    font-size: 20px;
-    font-weight: 600;
-    padding-left:0px 5px ;
-    margin-top: 15px;
-}
-.nav-ul li a{
+
+nav a {
+    color: white;
     text-decoration: none;
-    color: rgb(10, 11, 11);
+    font-size: 18px;
 }
-.nav-ul li a:hover{
-    color: rgb(26, 48, 213);
+
+nav a:hover {
     text-decoration: underline;
-    transition: 1s;
 }
-.btn1{
-    border-radius:30px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    padding-right:30px;
-    background-color: rgb(5, 160, 160);
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+section#about {
+    padding: 40px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#about h1 {
     text-align: center;
-    margin-left: 200px;
-    margin-bottom:5px;
-    cursor: pointer;
-}
-.btn2{
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 600;    
-    color: #fff;
-    padding-right: 30px;
-    background-color: rgb(67, 150, 219);
-    align-items: left;
-    margin-left: 30px;
-    margin-bottom:5px;
-    text-align: center;
-    cursor: pointer;
-}
-.main{
-    display: flex;
-    justify-content:center;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
-.main-h2h{
-    font-size: 50px;
-    font-weight: 600;
-    color:rgb(46, 113, 237);
-    margin-top:150px;
-    text-transform:uppercase;
-    text-align: center;
-    justify-content: center;
-}
-.main-ph{
-    font-size: 20px;
-    font-weight: 600;
-    color:#e51212;
-    margin-top:30px;
-    text-transform:uppercase;
-    text-align: center;
-    justify-content: space-between;
-    word-spacing: 57px;
 
+.all-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.member-one,
+.member-two,
+.member-three,
+.member-four {
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.member-one h2,
+.member-two h2,
+.member-three h2,
+.member-four h2 {
+    margin-bottom: 10px;
+}
+
+.member-one h3,
+.member-two h3,
+.member-three h3,
+.member-four h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+section.prodev,
+section.campevents {
+    padding: 40px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.prodev h1,
+section.campevents h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prodev div,
+.campevents div {
+    margin-bottom: 20px;
+}
+
+.prodev h2,
+.campevents h2 {
+    margin-bottom: 10px;
+}
+
+section#contacts {
+    padding: 40px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    padding: 20px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
