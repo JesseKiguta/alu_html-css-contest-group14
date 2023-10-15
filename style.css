@@ -22,6 +22,13 @@ header.background {
     padding: 80px 20px;
     text-align: center;
     height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+
 }
 
 nav ul {
@@ -146,6 +153,16 @@ form select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+div button {
+    padding: 8px 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 form button {
