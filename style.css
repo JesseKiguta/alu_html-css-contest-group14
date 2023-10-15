@@ -106,6 +106,52 @@ nav a:hover {
     color: antiquewhite;
 }
 
+/* past events */
+.videos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+  }
+  .videos h1,
+  .membership h1,
+  .faq h1 {
+    text-align: center;
+  }
+  .videos h1 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+ 
+  .videos_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .video_card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+  }
+
+  .video_card h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0.2rem;
+  }
+  .video_card .video_desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+  }
+  
 main {
     padding: 20px;
     background-color: #f9f9f9;
