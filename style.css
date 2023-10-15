@@ -10,6 +10,10 @@ nav {
     padding: 0;
 }
 
+body {
+    padding: 0px, 10px, 0px, 10px;
+}
+
 *,
 *::before,
 *::after {
@@ -43,6 +47,11 @@ span, nav, li {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 nav li {
@@ -237,6 +246,7 @@ section#contacts {
 
 form {
     padding: 20px;
+    margin: 20px;
 }
 
 form div {
@@ -285,4 +295,51 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+}
+
+
+.prodev {
+    display: flex;
+    flex-direction: column;
+}
+
+.event {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event img {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h2 {
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    margin-bottom: 10px;
+}
+
+.event-details a button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.event-details a button:hover {
+    background-color: #0056b3;
 }
