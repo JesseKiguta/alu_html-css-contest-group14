@@ -493,9 +493,6 @@ footer {
 }
 
 
-/* Add your existing CSS styles here */
-
-/* Common styles for smaller screens */
 @media only screen and (max-width: 900px) {
 
 
@@ -507,7 +504,6 @@ footer {
         font-size: 18px;
     }
 
-    /* Show dropdown when menu is active */
     header nav.active {
         display: block;
     }
@@ -529,7 +525,6 @@ footer {
     .overlayText {
         position: absolute;
         top: 20%;
-        /* left: 5%; */
         margin: auto;
         z-index: 1;
 
