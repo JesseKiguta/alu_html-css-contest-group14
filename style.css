@@ -491,3 +491,86 @@ footer {
 .event-details a button:hover {
     background-color: #0056b3;
 }
+
+
+/* Add your existing CSS styles here */
+
+/* Common styles for smaller screens */
+@media only screen and (max-width: 900px) {
+
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    /* Show dropdown when menu is active */
+    header nav.active {
+        display: block;
+    }
+
+    .overlayText > h1 {
+        font-size: 30px;
+    }
+    .overlayText > p {
+        display: none;
+    }
+
+    .container>img {
+        height: 40vh;
+        opacity: .9;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .overlayText {
+        position: absolute;
+        top: 20%;
+        /* left: 5%; */
+        margin: auto;
+        z-index: 1;
+
+    }
+
+    .event {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .event > img {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .sub__header > nav {
+        display: none;
+    }
+
+    .event-details a button {
+        display: block;
+        margin: auto;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .event-details a  {
+        text-decoration: none;
+    }
+
+    form > div {
+        display: block;
+        margin: auto;
+    }
+    form > button {
+        display: block;
+        margin: auto;
+    }
+}
