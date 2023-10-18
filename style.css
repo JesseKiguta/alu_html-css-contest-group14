@@ -8,6 +8,7 @@ header,
 nav {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -20,10 +21,6 @@ body {
     box-sizing: border-box;
 }
 
-/* header.background {
-    
-    
-} */
 
 header {
     background-color: #007BFF;
@@ -31,19 +28,22 @@ header {
     font-size: 16px;
     text-transform: uppercase;
     height: 60px;
+    width: 100vw;
 }
 
 header .sub__header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;       
+    justify-content: space-around;
 }
 
-span > i {
+span>i {
     color: rgb(210, 72, 30);
 }
 
-span, nav, li {
+span,
+nav,
+li {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
@@ -62,57 +62,58 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    
 }
 
 nav a:hover {
     background-color: chocolate;
+    padding: 1px 8px;
+    border-radius: 5px;
     /* color: #fff; */
     transition: all 0.6s ease-in-out;
 }
 
-/*  the sub main page */
-/* .sub__main {
-    background-image: url('https://images.unsplash.com/photo-1573165067541-4cd6d9837902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
-    background-size: cover;
-    background-position: center; */
-    /* color: white; */
-    /* padding: 80px 20px; */
-    /* text-align: center; */
-    /* height: 60vh; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center;  */
-    
-/* } */
-
 .container {
-     position:relative;
-    object-fit: fill;
-    }
-.container video {
-    position:relative;
-    z-index: 0;
+    /* position: relative;
+    object-fit: fill; */
+    display: flex;
+    width: 100vw;
+}
+
+.container > img {
     width: 100%;
+    height: 80vh;
+    opacity: .9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-text {
+    font-weight: 900;
 }
 
 .overlayText {
     position: absolute;
-    top: 30%;
-    left: 20%;
+    bottom: 20%;
+    left: 5%;
     z-index: 1;
-   
-  }
-  
-  .overlayText > h2 {
-    margin-bottom: 40px;
-    min-height: 14px;
-    color: rgb(210, 90, 30);
+
 }
 
-.overlayText > p {
+.overlayText>h1 {
+    margin-bottom: 40px;
+    min-height: 14px;
+    /* color: rgb(210, 90, 30); */
+    color: #007BFF;
+    font-size: 30px;
+}
+
+.overlayText>p {
     padding: 14px;
+    font-size: 20px;
     color: antiquewhite;
+    line-height: 1.7rem;
 }
 
 /* past events */
@@ -122,66 +123,70 @@ nav a:hover {
     padding-top: 3rem;
     padding-bottom: 3rem;
     justify-content: space-between;
-  }
-  .videos h1,
-  .membership h1,
-  .faq h1 {
+}
+
+.videos h1,
+.membership h1,
+.faq h1 {
     text-align: center;
-  }
-  .videos h1 {
+}
+
+.videos h1 {
     font-weight: 300;
     font-size: 32px;
     line-height: 40px;
     padding-top: 1rem;
     padding-bottom: 2rem;
-  }
- 
-  .videos_list {
+}
+
+.videos_list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }
-  .video_card {
+}
+
+.video_card {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     max-width: 30%;
-  }
+}
 
-  .video_card h2 {
+.video_card h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 0.2rem;
-  }
-  .video_card .video_desc {
+}
+
+.video_card .video_desc {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: rgba(7, 22, 41, 0.501584);
-  }
-  
-  .secondary_colour {
-    color: #c271ff;
-  }
-  
+}
 
-  .About{
+.secondary_colour {
+    color: #c271ff;
+}
+
+
+.About {
     background-color: rgb(37, 105, 199);
     color: white;
 }
 
-.About h2{
-   text-align: center;
-   font-size: 25px;
-   margin: 8px;
-   padding: 8px;
-   margin-left: -100px;
-   color: white;
-   
+.About h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 8px;
+    padding: 8px;
+    margin-left: -100px;
+    color: white;
+
 }
 
-.team-container{
+.team-container {
     display: flex;
     /* background-color: red; */
     flex-direction: row;
@@ -190,20 +195,21 @@ nav a:hover {
 
 
 .Member {
-padding: 50px;
-flex-direction: column;
-/* background-color: red; */
-flex: wrap;
-justify-content: space-between;
+    padding: 50px;
+    flex-direction: column;
+    /* background-color: red; */
+    flex: wrap;
+    justify-content: space-between;
 
 }
-.box{
+
+.box {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     margin: 10px;
 
-    
+
 }
 
 .Member p {
@@ -215,7 +221,7 @@ justify-content: space-between;
 }
 
 .Member #sub-image {
-    margin-left: 50px ;
+    margin-left: 50px;
 }
 
 
@@ -271,14 +277,68 @@ section#about h1 {
     margin-bottom: 10px;
 }
 
+
+.people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    justify-tracks: 10px;
+    gap: 10;
+}
+
+
+.about {
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.member h5 {
+    margin: 10px 0;
+}
+
+.member p {
+    margin-bottom: 10px;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 section.prodev,
 section.campevents {
-    
     padding: 40px 20px;
-    background-color: white;
+    /* background-color: white; */
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section.prodev h1,
@@ -305,6 +365,19 @@ section#contacts {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.event {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 35px;
+}
+
+.time {
+    color: gray;
+    font-size: 12px;
+    margin: 10px 0px;
+
+}
+
 form {
     padding: 20px;
     margin: 20px;
@@ -321,10 +394,16 @@ form label {
 
 form input,
 form select {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-top: 8px;
+    display: block;
+}
+
+.inline {
+    display: inline;
 }
 
 div button {
@@ -335,6 +414,19 @@ div button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+section.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+form {
+    width: 90%;
+    max-width: 1000px;
 }
 
 form button {
@@ -356,6 +448,7 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+    width: 100vw;
 }
 
 .event {
